@@ -1,0 +1,26 @@
+{
+  "name": "gdianov/yii2-creditcard-validator",
+  "description": "Validate credit cards.",
+  "keywords": ["yii2", "active", "record", "validate", "cards", "credit"],
+  "license": "MIT",
+  "repositories": [
+    {
+      "type": "git",
+      "url": "https://github.com/gdianov/yii2-creditcard-validator"
+    }
+  ],
+  "authors": [
+    {
+      "name": "Dianov German",
+      "email": "es_dianoff@yahoo.com"
+    }
+  ],
+  "require": {
+    "yiisoft/yii2": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "gdianov\\validators\\": "src/"
+    }
+  }
+}
