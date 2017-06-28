@@ -14,6 +14,13 @@ Supported cards :
 10. `unionpay`
 11. `jcb`
 
+Install: 
+`"require": 
+{
+  "gdianov/yii2-creditcard-validator": "^1.0"
+ },
+`
+
 # How to use?
 
 You can attach the validator as a model or use it directly.
