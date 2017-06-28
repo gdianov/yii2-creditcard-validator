@@ -12,7 +12,7 @@ use yii\validators\Validator;
  *       public function rules() {
  *           return [
  *              [['text'], 'string'],
- *              ['card', CardValidator::className(), 'type' => 'mastercard', 'luhn' => true],
+ *              ['card', CreditCardValidator::className(), 'type' => 'mastercard', 'luhn' => true],
  *              [['date'], 'safe'],
  *           ];
  *       }
