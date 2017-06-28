@@ -17,7 +17,7 @@ use yii\validators\Validator;
  *           ];
  *       }
  *
- *      CreditCardValidator::validateCard('mastercard', 'some_value', true);
+ *      CreditCardValidator::validateCard('mastercard', 'some_value', true)
  * ```
  *
  * @author Dianov German <es_dianoff@yahoo.com>
@@ -121,13 +121,7 @@ class CreditCardValidator extends Validator
     protected static function validLength($type, $number)
     {
         $allowable = self::getType($type)['length'];
-        foreach ($allowable as $length) {
-            if (mb_strlen($number) == $length) {
-                return true;
-            }
-        }
-
-        return false;
+        return in_array(mb_strlen($number), $allowable);
     }
 
     /**
